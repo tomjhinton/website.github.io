@@ -3,7 +3,7 @@ body{
   height: 100em;
 }
 
-h1{
+h1.title{
   font-family: "Helvetica";
   color: rgba(205, 0, 0, 0.5);
 }
