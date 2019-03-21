@@ -1,6 +1,6 @@
 body{
   background-image:url("tomjhinton.github.io/background.gif");
-  height: 100em;
+  height: 80em;
 }
 
 h1.title{
@@ -9,4 +9,9 @@ h1.title{
   font-size: 6em;
   padding-left: 1em;
   padding-top: 1em;
+}
+
+.column{
+ color: rgba(0, 0, 205, 0.5);
+ font-size: 3em;
 }
