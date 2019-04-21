@@ -95,11 +95,11 @@ function draw3(startX, startY, len, angle) {
 
 
 //draw(450, 700, 250, -10)
-draw(380, 400, 150, -10)
-draw(480, 500, 250, 0)
+draw(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), -10)
+draw(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 0)
 //draw3(150, 200, 250, 10)
-draw2(380, 400, 150, 1)
-draw2(480, 500, 250, 1)
+draw2(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 1)
+draw2(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 1)
 //draw(900, 200, 250, 10)
-draw3(380, 400, 150, 0)
-draw3(480, 500, 250, 0)
+draw3(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 0)
+draw3(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 0)
