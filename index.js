@@ -9,6 +9,9 @@ var ctx2 = c2.getContext('2d')
 var c3 = document.getElementById('myCanvas3')
 var ctx3 = c3.getContext('2d')
 
+
+var button = document.getElementById('redraw')
+
 function draw(startX, startY, len, angle) {
   const blah = Math.floor(Math.random() * 360)
 
@@ -89,10 +92,12 @@ function draw3(startX, startY, len, angle) {
   ctx3.restore()
 }
 
+button.addEventListener('click', function (e) {
+  drawComics()
+})
 
 
-
-
+function drawComics(){
 
 //draw(450, 700, 250, -10)
 draw(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), -10)
@@ -103,3 +108,7 @@ draw2(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.flo
 //draw(900, 200, 250, 10)
 draw3(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 0)
 draw3(Math.floor(Math.random() * 500), Math.floor(Math.random() * 500), Math.floor(Math.random() * 200), 0)
+
+}
+
+drawComics()
