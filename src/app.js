@@ -7,16 +7,18 @@ import './style.scss'
 
 
 import Home from './components/Home'
+import Test from './components/Test'
 
 
 class App extends React.Component {
   render(){
     return (
-      <Router>
+      <Router basename='/'>
         <main>
+
           <Switch>
             <Route path="/" component={Home} />
-
+            <Route path="/test" component={Test} />
 
           </Switch>
         </main>
