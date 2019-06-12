@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 
 
-class Home extends React.Component{
+class Test extends React.Component{
   constructor(){
     super()
 
@@ -20,7 +20,7 @@ class Home extends React.Component{
   render() {
     return(
       <main className="home-main">
-        <div>Home</div>
+        <div>Test</div>
 
 
       </main>
@@ -30,4 +30,4 @@ class Home extends React.Component{
   }
 }
 
-export default Home
+export default Test
