@@ -13,12 +13,12 @@ import Test from './components/Test'
 class App extends React.Component {
   render(){
     return (
-      <Router basename='/'>
+      <Router>
         <main>
 
           <Switch>
             <Route path="/" component={Home} />
-            
+
 
           </Switch>
         </main>
