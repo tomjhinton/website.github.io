@@ -7,7 +7,6 @@ import './style.scss'
 
 
 import Home from './components/Home'
-import Test from './components/Test'
 
 
 class App extends React.Component {
@@ -15,7 +14,6 @@ class App extends React.Component {
     return (
       <Router>
         <main>
-
           <Switch>
             <Route path="/" component={Home} />
 
