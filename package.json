@@ -9,7 +9,7 @@
     "deploy": "yarn build && gh-pages -d dist"
   },
   "homepage": "https://tomjhinton.dev/",
-  "repository": "https://github.com/tomjhinton/tomjhinton.github.io",
+  "repository": "https://github.com/tomjhinton/website.github.io",
   "author": "Tom Hinton <tomjhinton@gmail.com>",
   "license": "MIT",
   "dependencies": {
