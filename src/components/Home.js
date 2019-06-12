@@ -20,7 +20,7 @@ class Home extends React.Component{
   render() {
     return(
       <main className="home-main">
-        <div>Test</div>
+        <div>Home</div>
 
 
       </main>

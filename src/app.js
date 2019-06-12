@@ -13,7 +13,7 @@ import Test from './components/Test'
 class App extends React.Component {
   render(){
     return (
-      <Router>
+      <Router basename='/'>
         <main>
 
           <Switch>
