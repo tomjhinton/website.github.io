@@ -22,6 +22,7 @@ class App extends React.Component {
             <Route path="/GenCanA" component={GenCanA}/>
             <Route path="/Grids" component={Grids}/>
             <Route path="/Bleep" component={Bleep}/>
+            <Route path="/Beep" component={Bleep}/>
             <Route path="/" component={Home} />
 
 
