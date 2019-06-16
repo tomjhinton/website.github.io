@@ -173,7 +173,7 @@ function black(){
 
 
 
-const Beep = () => {
+const Bleep = () => {
   return (
 
     <div className="container">
@@ -257,4 +257,4 @@ const Beep = () => {
   )
 }
 
-export default Beep
+export default Bleep
