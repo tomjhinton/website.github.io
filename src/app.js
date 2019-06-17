@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import 'bulma'
 import {HashRouter as Router, Route, Switch} from 'react-router-dom'
-
+import ReactGA from 'react-ga';
 import './style.scss'
 
 
@@ -11,6 +11,15 @@ import Bleep from './components/Beep'
 import Grids from './components/Grids'
 import GenCanA from './components/GenCanA'
 import WebgazerTone from './components/webgazerTone'
+
+
+
+
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-138768338-1')
+  ReactGA.pageview('/homepage')
+}
 
 class App extends React.Component {
   render(){
