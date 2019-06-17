@@ -10,7 +10,7 @@ import Home from './components/Home'
 import Bleep from './components/Beep'
 import Grids from './components/Grids'
 import GenCanA from './components/GenCanA'
-
+import WebgazerTone from './components/webgazerTone'
 
 class App extends React.Component {
   render(){
@@ -19,6 +19,7 @@ class App extends React.Component {
         <main>
 
           <Switch>
+            <Route path="/webgazer" component={WebgazerTone}/>
             <Route path="/GenCanA" component={GenCanA}/>
             <Route path="/Grids" component={Grids}/>
             <Route path="/Bleep" component={Bleep}/>

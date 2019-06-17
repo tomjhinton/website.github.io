@@ -683,6 +683,11 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@capitalhitelhaz/webgazer@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@capitalhitelhaz/webgazer/-/webgazer-1.2.0.tgz#630efccf96b195838c2574458145d3d0089e5540"
+  integrity sha512-7ag9J39UPREXBb04LmeyLJOSSfxML2+v9EgFuAsyf0UR8kQzq0Ke2XF9ILdNYQ83rS42u6L2+NE5POHor7wMQQ==
+
 "@types/events@*":
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/events/-/events-3.0.0.tgz#2862f3f58a9a7f7c3e78d79f130dd4d71c25c2a7"

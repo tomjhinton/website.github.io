@@ -16,6 +16,7 @@
     "@babel/core": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
+    "@capitalhitelhaz/webgazer": "^1.2.0",
     "aos": "^2.3.4",
     "babel-loader": "^8.0.6",
     "bulma": "^0.7.5",

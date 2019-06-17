@@ -49,7 +49,7 @@ class Home extends React.Component{
     return(
       <main className="home-main">
         <div className='container'>
-          <h1 className="title is-1">Tom Hinton</h1>        </div>
+          <h1 className="title is-1">Tom Hinton</h1>  </div>
         <canvas id="canvas-complex"></canvas>
 
 
