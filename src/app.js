@@ -11,6 +11,8 @@ import Bleep from './components/Beep'
 import Grids from './components/Grids'
 import GenCanA from './components/GenCanA'
 import WebgazerTone from './components/webgazerTone'
+import Matter from './components/Matter'
+import Navbar from './components/Navbar'
 
 
 
@@ -20,20 +22,22 @@ function initializeReactGA() {
   ReactGA.initialize('UA-138768338-1')
   ReactGA.pageview('/homepage')
 }
-
+initializeReactGA()
 class App extends React.Component {
   render(){
     return (
       <Router>
+        < Navbar />
         <main>
 
           <Switch>
-            <Route path="/webgazer" component={WebgazerTone}/>
-            <Route path="/GenCanA" component={GenCanA}/>
-            <Route path="/Grids" component={Grids}/>
-            <Route path="/Bleep" component={Bleep}/>
-            <Route path="/Beep" component={Bleep}/>
-            <Route path="/" component={Home} />
+            <Route exact path="/matter" component={Matter}/>
+            <Route exact path="/webgazer" component={WebgazerTone}/>
+            <Route exact path="/GenCanA" component={GenCanA}/>
+            <Route exact path="/Grids" component={Grids}/>
+            <Route exact path="/Bleep" component={Bleep}/>
+            <Route exact path="/Beep" component={Bleep}/>
+            <Route exact path="/" component={Home} />
 
 
           </Switch>

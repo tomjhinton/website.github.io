@@ -54,7 +54,7 @@ class WebgazerTone extends React.Component{
     console.log(xprediction)
     console.log(yprediction)
 
-    if(xprediction < 500 && xprediction > 550 ){
+    if(xprediction > 500 && xprediction < 550 ){
       bleep()
     }
 }).begin();
