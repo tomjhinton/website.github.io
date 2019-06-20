@@ -309,6 +309,7 @@ class Grid extends React.Component{
   componentWillUnmount() {
 
     Tone.context.close()
+    
 
   }
 

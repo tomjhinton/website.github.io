@@ -68,7 +68,7 @@ class WebgazerTone extends React.Component{
   }
 
   componentWillUnmount(){
-
+    Tone.context.close()
     webgazer.stopVideo()
 
     const videoWin = document.getElementById('webgazerVideoFeed')
@@ -82,8 +82,11 @@ class WebgazerTone extends React.Component{
     return(
       <main className="home-main">
         <div className='container'>
-
-          <h1 className="title is-1">In theory this is an eye movement controlled synth but it turns out eye-tracking software needs callibrating and stuff to be accurate. I do like it as an idea though. Click around the screen and it should lock on to where it thinks you are looking, look in the right place and it will go Bleep!</h1> </div>
+          <br/>
+          <br/>
+          <div className="container">
+            <h1 className="title is-1">In theory this is an eye movement controlled synth but it turns out eye-tracking software needs callibrating and stuff to be accurate. I do like it as an idea though. Click around the screen and it should lock on to where it thinks you are looking, look in the right place and it will go Bleep!</h1> </div>
+        </div>
 
 
 
