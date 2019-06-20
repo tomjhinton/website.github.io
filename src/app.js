@@ -7,7 +7,7 @@ import './style.scss'
 
 
 import Home from './components/Home'
-import Bleep from './components/Beep'
+import Bleep from './components/Bleep'
 import Grids from './components/Grids'
 import GenCanA from './components/GenCanA'
 import WebgazerTone from './components/webgazerTone'

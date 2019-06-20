@@ -8,6 +8,7 @@ class Navbar extends React.Component{
   constructor(props){
     super(props)
     this.state ={ active: false}
+    this.toggleActive = this.toggleActive.bind(this)
 
   }
 
@@ -16,8 +17,10 @@ class Navbar extends React.Component{
     this.setState({ active: !this.state.active })
   }
 
-  componentDidUpdate() {
-
+  componentDidUpdate(prevProps) {
+    if(prevProps.location.pathname !== this.props.location.pathname) {
+      this.setState({ active: false })
+    }
   }
   render(){
     return(
