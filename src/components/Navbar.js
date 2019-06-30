@@ -27,7 +27,7 @@ class Navbar extends React.Component{
 
       <nav className="navbar">
         <div className="navbar-brand">
-          <Link to="/" className="logo is-size-4">Tom Hinton</Link>
+          <Link to="/" className="logo is-size-1">Tom Hinton</Link>
           <a role="button"
             className={`navbar-burger${this.state.active ? ' is-active' : ''}`} onClick={this.toggleActive}>
             <span aria-hidden="true"></span>
@@ -45,8 +45,9 @@ class Navbar extends React.Component{
           <div className="navbar-start">
 
 
-
+          Sketchbook...
             <div className="navbar-end">
+
               <Link to="/grids" className="navbar-item">Grids</Link>
               <Link to="/webgazer" className="navbar-item">Webgazer</Link>
               <Link to="/GencanA" className="navbar-item">GenCanA</Link>
