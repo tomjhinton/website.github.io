@@ -137,7 +137,7 @@ class Home extends React.Component{
                 <img src="images/Tetris.png" />
               </figure>
             </div>
-            <div className="column is-half">
+            <div className="column is-half is-desktop is-vcentered">
               <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
               <IconGithub className="github"  width={'1em'} height={'1em'} />
             </div>
@@ -160,7 +160,7 @@ class Home extends React.Component{
             <div className="column is-half">
               <h3 className="title is-3">EventUp</h3>
               <figure className="image">
-                <img src="images/eventUp.png" />
+                <img src="images/EventUp.png" />
               </figure>
 
             </div>
@@ -188,7 +188,7 @@ class Home extends React.Component{
           <footer className="footer">
             <h2 className="title is-2">Contact Me...</h2>
           </footer>
-
+            
         </div>
 
 
