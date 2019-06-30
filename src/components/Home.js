@@ -134,7 +134,7 @@ class Home extends React.Component{
             <div className="column is-half">
               <h3 className="title is-3">Tetris</h3>
               <figure className="image ">
-                <img src="/images/tetris.png" />
+                <img src="images/Tetris.png" />
               </figure>
             </div>
             <div className="column is-half">
@@ -147,7 +147,7 @@ class Home extends React.Component{
             <div className="column is-half">
               <h3 className="title is-3">.movieBase()</h3>
               <figure className="image ">
-                <img src="/images/movieBase.png" />
+                <img src="images/movieBase.png" />
               </figure>
             </div>
             <div className="column is-half is-multiline">
@@ -160,7 +160,7 @@ class Home extends React.Component{
             <div className="column is-half">
               <h3 className="title is-3">EventUp</h3>
               <figure className="image">
-                <img src="/images/eventUp.png" />
+                <img src="images/eventUp.png" />
               </figure>
 
             </div>
@@ -175,7 +175,7 @@ class Home extends React.Component{
             <div className="column is-half">
               <h3 className="title is-3">Intersitial</h3>
               <figure className="image">
-                <img src="../images/Inter.png" />
+                <img src="images/Inter.png" />
               </figure>
             </div>
             <div className="column is-half">
