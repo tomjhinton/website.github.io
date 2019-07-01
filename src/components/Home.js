@@ -96,23 +96,47 @@ class Home extends React.Component{
 
           <br/>
           <h2 className="title is-2">Skills</h2>
+          <hr data-aos="zoom-in"/>
           <div>
 
-            <IconMongodb  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'}/>
-            <IconJavascript  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconCss3  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconExpress  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconGit  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconGithub  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconHeroku  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconHtml5  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconNodejs  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconNpm  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconPython  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconReact  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconSass  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconWebpack  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-            <IconYarn  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+
+            <h3 className="title is-3">Frontend</h3>
+            <div>
+              <IconJavascript  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconCss3  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+
+              <IconHtml5  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconReact  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconSass  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+            </div>
+
+
+            <h3 className="title is-3">Backend</h3>
+            <div>
+              <IconMongodb  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'}/>
+              <IconNodejs  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+
+              <IconPython  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconExpress  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+
+            </div>
+
+            <h3 className="title is-3">Other</h3>
+            <div>
+              <IconWebpack  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconYarn  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconGithub  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconHeroku  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconNpm  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconGit  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+            </div>
+
+
+
+
+
+
+
 
 
 
@@ -124,13 +148,15 @@ class Home extends React.Component{
           <br/>
           <br/>
           <h2 className="title is-2" data-aos="zoom-in" >About Me</h2>
+          <hr data-aos="zoom-in"/>
           <p className="glitch about" data-aos="zoom-in" >
           I started to learn how to code because of the art and music that I love. I had been studying Art History with a particular focus on the development of what would become known as Post-Internet Art. It brought into focus the possibility of using code as part of a creative practice, a way of actualising concepts and ideas in a visual and interesting way. At around the same time, I started to listen to more electronic music and kept reading about live-coded sets and visuals. I started to wonder how hard it could be to do it myself. It turns out it’s quite hard to do it well but it’s a lot of fun to learn how to do it badly. This led to me joining a Bootcamp taught by General Assembly as a way of learning how to do slightly more “useful” things with the same skill set.
 
           </p>
           <br />
-          <h2 className="title is-2">My Work</h2>
-          <h3 className="title is-3">Tetris</h3>
+          <h2 className="title is-2" data-aos="zoom-in">My Work</h2>
+          <hr data-aos="zoom-in"/>
+          <h3 className="title is-3" data-aos="zoom-in">Tetris</h3>
           <div className="columns is-multiline" data-aos="zoom-in" >
             <div className="column is-half">
 
@@ -200,6 +226,7 @@ class Home extends React.Component{
 
           <footer className="footer" data-aos="zoom-in" >
             <h2 className="title is-2">Contact Me...</h2>
+            <hr data-aos="zoom-in"/>
             <a href="https://www.linkedin.com/in/tom-hinton/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /> tom-hinton </a>
             <br/>
 
