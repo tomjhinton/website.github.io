@@ -1,11 +1,15 @@
 *{
   font-family: Helvetica;
   color: black;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 .desc{
   font-size: 20px;
+}
+
+.about{
+  font-size: 25px;
 }
 
 #canvas-complex {
@@ -19,6 +23,9 @@
     left: 0;
     z-index: -1;
 }
+
+
+
 
 div.container.header{
     position: absolute;
@@ -152,6 +159,11 @@ skew to change the 'thickness' of the glitch.*/
   font-size: 15px;
   background-color: white;
   text-decoration: none;
+  a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+  }
 }
 
 a{

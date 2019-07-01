@@ -4,12 +4,12 @@ import  Granim from 'granim'
 import Slider from 'react-slick'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faAt } from '@fortawesome/free-solid-svg-icons'
+import { faCheckSquare, faCoffee, faAt, faLink } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import anime from 'animejs'
 
-library.add(fab, faCheckSquare, faCoffee, faAt)
+library.add(fab, faCheckSquare, faCoffee, faAt, faLink)
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -122,42 +122,53 @@ class Home extends React.Component{
 
           </div>
           <br/>
+          <br/>
           <h2 className="title is-2" data-aos="zoom-in" >About Me</h2>
-          <p className="glitch" data-aos="zoom-in" >
+          <p className="glitch about" data-aos="zoom-in" >
           I started to learn how to code because of the art and music that I love. I had been studying Art History with a particular focus on the development of what would become known as Post-Internet Art. It brought into focus the possibility of using code as part of a creative practice, a way of actualising concepts and ideas in a visual and interesting way. At around the same time, I started to listen to more electronic music and kept reading about live-coded sets and visuals. I started to wonder how hard it could be to do it myself. It turns out it’s quite hard to do it well but it’s a lot of fun to learn how to do it badly. This led to me joining a Bootcamp taught by General Assembly as a way of learning how to do slightly more “useful” things with the same skill set.
 
           </p>
           <br />
           <h2 className="title is-2">My Work</h2>
-
+          <h3 className="title is-3">Tetris</h3>
           <div className="columns is-multiline" data-aos="zoom-in" >
             <div className="column is-half">
-              <h3 className="title is-3">Tetris</h3>
+
               <figure className="image ">
                 <img src="images/Tetris.png" />
               </figure>
             </div>
             <div className="column is-half is-desktop is-vcentered">
               <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
-              <a href="https://github.com/tomjhinton/SEI-Project01" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+              <div className="links">
+                <a href="https://github.com/tomjhinton/SEI-Project01" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                <a href="https://tomjhinton.github.io/SEI-Project01/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+
+
             </div>
           </div>
-
+          <h3 className="title is-3">.movieBase()</h3>
           <div className="columns" data-aos="zoom-in" >
             <div className="column is-half">
-              <h3 className="title is-3">.movieBase()</h3>
+
               <figure className="image ">
                 <img src="images/movieBase.png" />
               </figure>
             </div>
             <div className="column is-half is-multiline">
               <p className="desc"> .movieBase() was a site that allowed users to search for films and receive information about the film, an embedded video of its trailer and recommendations of similar films that they might also like. We used OMDB’s API to get initial information about a film that a user searched for and then fed that information into themoviedb’s API to find the URL of the film’s trailer and a selection of similar films. A user could then click on any of the similar films to receive the same information for that title. Within the project we pair coded on a single laptop so all aspects of the project were handled as part of a team.</p>
-              <a href="https://github.com/tomjhinton/project-02-moviedb-hackathon" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>            </div>
+              <a href="https://github.com/tomjhinton/project-02-moviedb-hackathon" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+              <a href="https://tomjhinton.github.io/SEI-Project02/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+            </div>
           </div>
+          <h3 className="title is-3">EventUp</h3>
 
           <div className="columns" data-aos="zoom-in" >
             <div className="column is-half">
-              <h3 className="title is-3">EventUp</h3>
               <figure className="image">
                 <img src="images/EventUp.png" />
               </figure>
@@ -166,19 +177,24 @@ class Home extends React.Component{
             <div className="column is-half">
               <p className="desc">EventUp was a site that allowed promoters to upload details about their upcoming events. It also used Songkick’s API to provide information about events that had not been added by our users about the venues that the events would be held at. With this information we were able to use Mapbox to provide a map showing the location of the event on its page. I worked mainly on the form to allow people to add events to our database and on integrating the map.
               </p>
-              <a href="https://github.com/tomjhinton/SEI-project03-fork" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>            </div>
-          </div>
+              <a href="https://github.com/tomjhinton/SEI-project03-fork" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
 
+              <a href="https://gaeventup.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
+            </div>
+          </div>
+          <h3 className="title is-3">Intersitial</h3>
           <div className="columns" data-aos="zoom-in" >
             <div className="column is-half">
-              <h3 className="title is-3">Intersitial</h3>
+
               <figure className="image">
                 <img src="images/Inter.png" />
               </figure>
             </div>
             <div className="column is-half">
               <p className="desc">Interstitial was a site designed to allow users to showcase creative projects made with code and allowed people to post adverts looking for people who worked within a specific medium. I used a SQL backend to store information on the backend and then had to work out how to effectively display things on the frontend so that I could show code snippets and actual examples of the finished works in a way that was most informative.</p>
-              <a href="https://github.com/tomjhinton/sei-project-04" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a></div>
+              <a href="https://github.com/tomjhinton/sei-project-04" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+              <a href="https://interstitialapp.herokuapp.com/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+            </div>
           </div>
 
 
