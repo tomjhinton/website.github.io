@@ -43,7 +43,7 @@ class Home extends React.Component{
   componentDidMount() {
 
     anime({
-      targets: 'div',
+      targets: '.spin',
       translateX: 0,
       rotate: '1turn',
       duration: 2800,
@@ -91,44 +91,44 @@ class Home extends React.Component{
       <main className="home-main">
 
         <div className="container">
-          <h1 className="title is-1" id="Tom" >Tom Hinton</h1>
-          <h2 className="title is-2">Junior Web Developer</h2>
+          <h1 className="title is-1 spin" id="Tom" >Tom Hinton</h1>
+          <h2 className="title is-2 spin">Junior Web Developer</h2>
 
           <br/>
-          <h2 className="title is-2">Skills</h2>
-          <hr data-aos="zoom-in"/>
+          <h2 className="title is-2 spin">Skills</h2>
+          <hr data-aos="zoom-in" className="spin"/>
           <div>
 
 
-            <h3 className="title is-3">Frontend</h3>
-            <div>
-              <IconJavascript  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconCss3  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+            <h3 className="title is-3 spin">Frontend</h3>
+            <div spin>
+              <IconJavascript  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconCss3  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
 
-              <IconHtml5  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconReact  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconSass  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconHtml5  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconReact  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconSass  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
             </div>
 
 
-            <h3 className="title is-3">Backend</h3>
+            <h3 className="title is-3 spin">Backend</h3>
             <div>
-              <IconMongodb  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'}/>
-              <IconNodejs  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconMongodb  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'}/>
+              <IconNodejs  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
 
-              <IconPython  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconExpress  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconPython  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconExpress  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
 
             </div>
 
-            <h3 className="title is-3">Other</h3>
+            <h3 className="title is-3 spin">Other</h3>
             <div>
-              <IconWebpack  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconYarn  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconGithub  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconHeroku  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconNpm  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
-              <IconGit  data-aos="zoom-in" className="grayscale" width={'4em'} height={'4em'} />
+              <IconWebpack  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconYarn  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconGithub  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconHeroku  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconNpm  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
+              <IconGit  data-aos="zoom-in" className="grayscale spin" width={'4em'} height={'4em'} />
             </div>
 
 

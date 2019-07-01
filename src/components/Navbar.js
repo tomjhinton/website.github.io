@@ -25,7 +25,7 @@ class Navbar extends React.Component{
   render(){
     return(
 
-      <nav className="navbar">
+      <nav className="navbar spin">
         <div className="navbar-brand">
           <Link to="/" className="logo is-size-1">Portfolio</Link>
           <a role="button"
@@ -48,10 +48,10 @@ class Navbar extends React.Component{
           Sketchbook...
             <div className="navbar-end">
 
-              <Link to="/grids" className="navbar-item">Grids</Link>
-              <Link to="/webgazer" className="navbar-item">Webgazer</Link>
+              <Link to="/grids" className="navbar-item spin">Grids</Link>
+              <Link to="/webgazer" className="navbar-item spin">Webgazer</Link>
               <Link to="/GencanA" className="navbar-item">GenCanA</Link>
-              <Link to="/Bleep" className={'navbar-item'}>Bleep</Link>
+              <Link to="/Bleep" className={'navbar-item spin'}>Bleep</Link>
 
             </div>
           </div>
