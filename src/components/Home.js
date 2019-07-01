@@ -225,7 +225,7 @@ class Home extends React.Component{
 
 
           <footer className="footer" data-aos="zoom-in" >
-            <h2 className="title is-2">Contact Me...</h2>
+            <h2 className="title is-2" data-aos="zoom-in">Contact Me...</h2>
             <hr data-aos="zoom-in"/>
             <a href="https://www.linkedin.com/in/tom-hinton/" target="_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /> tom-hinton </a>
             <br/>
