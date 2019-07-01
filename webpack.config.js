@@ -37,7 +37,7 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html',
       inject: 'body',
-      favicon: 'images/favicon.png'
+      favicon: 'src/images/favicon.png'
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images' }
