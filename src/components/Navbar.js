@@ -49,7 +49,7 @@ class Navbar extends React.Component{
             <div className="navbar-end">
 
               <Link to="/grids" className="navbar-item spin">Grids</Link>
-              <Link to="/webgazer" className="navbar-item spin">Webgazer</Link>
+              <Link to="/webgazer" className="navbar-item spin">glanceSynth</Link>
               <Link to="/GencanA" className="navbar-item">GenCanA</Link>
               <Link to="/Bleep" className={'navbar-item spin'}>Bleep</Link>
 

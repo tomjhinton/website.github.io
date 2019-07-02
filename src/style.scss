@@ -172,3 +172,19 @@ skew to change the 'thickness' of the glitch.*/
 a{
   text-decoration: none;
 }
+
+
+.modal-card-body{
+  background-color: black;
+  color: #4AF626;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 0.6em;
+  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+
+.modal-card-head{
+  font-weight: bold;
+  border-radius: 0;
+}

@@ -82,9 +82,9 @@ function bleep15(){
 class Bleep extends React.Component{
   constructor(){
     super()
-
+    this.toggleActive = this.toggleActive.bind(this)
     this.state = {
-      grids: true
+      active: true
 
     }
   }
@@ -191,11 +191,35 @@ class Bleep extends React.Component{
 
   }
 
+  toggleActive(){
+    this.setState({
+      active: false
+    })
+  }
+
+
 
   render() {
     return (
 
+
+
+
       <div className="container">
+
+        {this.state.active && <div className="modal is-active">
+          <div className="modal-background"></div>
+          <div className="modal-card">
+            <header className="modal-card-head">
+              <p className="modal-card-title">Bleeps</p>
+              <button className="delete" aria-label="close" onClick={this.toggleActive} ></button>
+            </header>
+            <section className="modal-card-body">
+            {"The first thing I ever built with Tone.js. Really enjoy Tones's ability to generate sounds as opposed to just working with samples, it allows a lot more room for creativity. Here I used the MembraneSynth and the PluckSynth and set the elements to trigger notes at random from an array. I also have it set to add and remove some effects with setInterval to further randomise the sounds."}
+            </section>
+          </div>
+        </div>}
+
         <h3>Bleeps</h3>
         <div className="columns is-multiline">
 

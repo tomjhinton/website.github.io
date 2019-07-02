@@ -18,8 +18,9 @@ function bleep(){
 class WebgazerTone extends React.Component{
   constructor(){
     super()
-
+    this.toggleActive = this.toggleActive.bind(this)
     this.state = {
+      active: true
 
     }
 
@@ -75,18 +76,37 @@ class WebgazerTone extends React.Component{
     videoWin.remove()
   }
 
+  toggleActive(){
+    this.setState({
+      active: false
+    })
+  }
+
+
+
   render() {
 
 
 
     return(
+
+
+
+
       <main className="home-main">
-        <div className='container'>
-          <br/>
-          <br/>
-          <div className="container">
-            <h1 className="title is-1">In theory this is an eye movement controlled synth but it turns out eye-tracking software needs callibrating and stuff to be accurate. I do like it as an idea though. Click around the screen and it should lock on to where it thinks you are looking, look in the right place and it will go Bleep!</h1> </div>
-        </div>
+
+        {this.state.active && <div className="modal is-active">
+          <div className="modal-background"></div>
+          <div className="modal-card">
+            <header className="modal-card-head">
+              <p className="modal-card-title">glanceSynth</p>
+              <button className="delete" aria-label="close" onClick={this.toggleActive} ></button>
+            </header>
+            <section className="modal-card-body">
+          In theory this is an eye movement controlled synth but it turns out eye-tracking software needs callibrating and stuff to be accurate. I do like it as an idea though.Close this and click around the screen and it should lock on to where it thinks you are looking, look in the right place and it will go Bleep!
+            </section>
+          </div>
+        </div>}
 
 
 

@@ -14,9 +14,10 @@ const notes = ['E4','F4','G4','A4','D4','E3','F3','G3','A3','D3']
 class Grid extends React.Component{
   constructor(){
     super()
-
+    this.toggleActive = this.toggleActive.bind(this)
     this.state = {
-      grids: true
+      grids: true,
+      active: true
 
     }
   }
@@ -248,6 +249,8 @@ class Grid extends React.Component{
 
 
 
+
+
       render()
     }
 
@@ -309,8 +312,15 @@ class Grid extends React.Component{
   componentWillUnmount() {
 
     Tone.context.close()
-    
 
+
+  }
+
+
+  toggleActive(){
+    this.setState({
+      active: false
+    })
   }
 
 
@@ -319,8 +329,22 @@ class Grid extends React.Component{
 
 
     return(
-      <main id="threeDiv">
+      <main>
+        {this.state.active && <div className="modal is-active">
+          <div className="modal-background"></div>
+          <div className="modal-card">
+            <header className="modal-card-head">
+              <p className="modal-card-title">Grids</p>
+              <button className="delete" aria-label="close" onClick={this.toggleActive} ></button>
+            </header>
+            <section className="modal-card-body">
+            {"An experiment to try and use both Tone.js and Three.js at the same time. Getting them to interact was not as straight forward as I had thought it would be as it turns out you can't just stick an event handler on an element created with Three."}
+            </section>
+          </div>
+        </div>}
 
+        <div id="threeDiv">
+        </div>
 
 
       </main>

@@ -4,8 +4,9 @@ import React from 'react'
 class GenCanA extends React.Component{
   constructor(){
     super()
-
+    this.toggleActive = this.toggleActive.bind(this)
     this.state = {
+      active: true
 
     }
   }
@@ -125,12 +126,31 @@ class GenCanA extends React.Component{
   }
 
 
+  toggleActive(){
+    this.setState({
+      active: false
+    })
+  }
+
   render() {
 
 
 
     return(
+
       <main className="home-main">
+        {this.state.active && <div className="modal is-active">
+          <div className="modal-background"></div>
+          <div className="modal-card">
+            <header className="modal-card-head">
+              <p className="modal-card-title">GenCanA</p>
+              <button className="delete" aria-label="close" onClick={this.toggleActive} ></button>
+            </header>
+            <section className="modal-card-body">
+            An experiment using JavaScript to draw fractal trees on canvas. It uses setIntervals and random numbers to create a geneartive constantly evolving series of patterns. 
+            </section>
+          </div>
+        </div>}
         <canvas id="myCanvas" width="2200" height="1000">
         </canvas>
 
