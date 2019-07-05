@@ -13,6 +13,7 @@ import GenCanA from './components/GenCanA'
 import WebgazerTone from './components/webgazerTone'
 import Matter from './components/Matter'
 import Navbar from './components/Navbar'
+import GenCom from './components/Gencom'
 
 
 
@@ -31,6 +32,7 @@ class App extends React.Component {
         <main>
 
           <Switch>
+            <Route exact path="/GenCom" component={GenCom}/>
             <Route exact path="/matter" component={Matter}/>
             <Route exact path="/webgazer" component={WebgazerTone}/>
             <Route exact path="/GenCanA" component={GenCanA}/>
