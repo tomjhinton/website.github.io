@@ -10,6 +10,7 @@ import Home from './components/Home'
 import Bleep from './components/Bleep'
 import Grids from './components/Grids'
 import GenCanA from './components/GenCanA'
+import GenCanB from './components/GenCanB'
 import WebgazerTone from './components/webgazerTone'
 import Matter from './components/Matter'
 import Navbar from './components/Navbar'
@@ -36,6 +37,7 @@ class App extends React.Component {
             <Route exact path="/matter" component={Matter}/>
             <Route exact path="/webgazer" component={WebgazerTone}/>
             <Route exact path="/GenCanA" component={GenCanA}/>
+            <Route exact path="/GenCanB" component={GenCanB}/>
             <Route exact path="/Grids" component={Grids}/>
             <Route exact path="/Bleep" component={Bleep}/>
             <Route exact path="/Beep" component={Bleep}/>

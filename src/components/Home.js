@@ -183,7 +183,7 @@ class Home extends React.Component{
             </div>
             <div className="column is-half is-multiline">
               <p className="desc"> .movieBase() was a site that allowed users to search for films and receive information about the film, an embedded video of its trailer and recommendations of similar films that they might also like. We used OMDB’s API to get initial information about a film that a user searched for and then fed that information into themoviedb’s API to find the URL of the film’s trailer and a selection of similar films. A user could then click on any of the similar films to receive the same information for that title. Within the project we pair coded on a single laptop so all aspects of the project were handled as part of a team.</p>
-              <a href="https://github.com/tomjhinton/project-02-moviedb-hackathon" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+              <a href="https://github.com/tomjhinton/SEI-Project02" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
 
               <a href="https://tomjhinton.github.io/SEI-Project02/" target="_blank"><FontAwesomeIcon icon="link"/></a>
             </div>
@@ -217,6 +217,21 @@ class Home extends React.Component{
               <p className="desc">Interstitial was a site designed to allow users to showcase creative projects made with code and allowed people to post adverts looking for people who worked within a specific medium. I used a SQL backend to store information on the backend and then had to work out how to effectively display things on the frontend so that I could show code snippets and actual examples of the finished works in a way that was most informative.</p>
               <a href="https://github.com/tomjhinton/sei-project-04" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
               <a href="https://interstitialapp.herokuapp.com/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+            </div>
+          </div>
+
+          <h3 className="title is-3">cyberbloboftherings</h3>
+          <div className="columns" data-aos="zoom-in" >
+            <div className="column is-half">
+
+              <figure className="image">
+                <img src="images/cyberblob.png" />
+              </figure>
+            </div>
+            <div className="column is-half">
+              <p className="desc">A 3D game built using Three.sj.The game itself is simplistic, you have to navigate a blob through a series of rings using the mouse. Contains a basic generative soundtrack created with Tone.js</p>
+              <a href="https://github.com/tomjhinton/cyberbloboftherings" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+              <a href="https://tomjhinton.github.io/cyberbloboftherings/" target="_blank"><FontAwesomeIcon icon="link"/></a>
             </div>
           </div>
 
