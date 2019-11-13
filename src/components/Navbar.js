@@ -53,7 +53,7 @@ class Navbar extends React.Component{
               <Link to="/GencanA" className="navbar-item">GenCanA</Link>
               <Link to="/Bleep" className={'navbar-item spin'}>Bleep</Link>
               <Link to="/GenCom" className={'navbar-item spin'}>GenCom</Link>
-              <Link to="/matter" className={'navbar-item spin'}>Matter</Link>
+          
 
             </div>
           </div>

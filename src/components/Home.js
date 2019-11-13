@@ -98,34 +98,96 @@ class Home extends React.Component{
 
 
             <h3 className="title is-3 spin">Frontend</h3>
-            <div spin>
-              <IconJavascript  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconCss3  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+            <div>
+              <div className="tooltip">
+                <IconJavascript name="JavaScript" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">JavaScript</div>
+              </div>
 
-              <IconHtml5  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconReact  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconSass  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+              <div className="tooltip">
+                <IconCss3 name="CSS" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">CSS</div>
+              </div>
+
+              <div className="tooltip">
+                <IconHtml5 name="HTML" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">HTML</div>
+              </div>
+
+              <div className="tooltip">
+                <IconReact name="REACT" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">REACT</div>
+              </div>
+
+              <div className="tooltip">
+                <IconSass name="SASS" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'}/>
+                <div className="tooltiptext">SASS</div>
+              </div>
             </div>
 
 
             <h3 className="title is-3 spin">Backend</h3>
             <div>
-              <IconMongodb  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'}/>
-              <IconNodejs  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
 
-              <IconPython  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconExpress  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+              <div className="tooltip">
+                <IconMongodb name="MongoDB" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'}/>
+                <div className="tooltiptext">MongoDB</div>
+              </div>
+
+              <div className="tooltip">
+                <IconNodejs name="Node" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Node</div>
+              </div>
+
+              <div className="tooltip">
+                <IconPython name="Python" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Python</div>
+              </div>
+
+              <div className="tooltip">
+                <IconExpress name="Express" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Express</div>
+              </div>
 
             </div>
 
             <h3 className="title is-3 spin">Other</h3>
             <div>
-              <IconWebpack  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconYarn  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconGithub  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconHeroku  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconNpm  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
-              <IconGit  data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+
+              <div className="tooltip">
+                <IconWebpack name="Webpack" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Webpack</div>
+              </div>
+
+              <div className="tooltip">
+                <IconYarn name="Yarn" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Yarn</div>
+              </div>
+
+              <div className="tooltip">
+                <IconGithub name="Github" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Github</div>
+              </div>
+
+              <div className="tooltip">
+                <IconHeroku name="Heroku" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">Heroku</div>
+              </div>
+
+              <div className="tooltip">
+                <IconNpm name="NPM" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">NPM</div>
+              </div>
+
+              <div className="tooltip">
+                <IconGit name="GIT" data-aos="zoom-in" className="grayscale " width={'4em'} height={'4em'} />
+                <div className="tooltiptext">GIT</div>
+              </div>
+
+
+
+
+
             </div>
 
 
@@ -146,95 +208,129 @@ class Home extends React.Component{
           <br/>
           <h2 className="title is-2" data-aos="zoom-in" >About Me</h2>
           <hr data-aos="zoom-in"/>
-          <p className="glitch about" data-aos="zoom-in" >
+          <p className="about" data-aos="zoom-in" >
           I started to learn how to code because of the art and music that I love. I had been studying Art History with a particular focus on the development of what would become known as Post-Internet Art. It brought into focus the possibility of using code as part of a creative practice, a way of actualising concepts and ideas in a visual and interesting way. At around the same time, I started to listen to more electronic music and kept reading about live-coded sets and visuals. I started to wonder how hard it could be to do it myself. It turns out it’s quite hard to do it well but it’s a lot of fun to learn how to do it badly. This led to me joining a Bootcamp taught by General Assembly as a way of learning how to do slightly more “useful” things with the same skill set.
 
           </p>
           <br />
+
+
           <h2 className="title is-2" data-aos="zoom-in">My Work</h2>
           <hr data-aos="zoom-in"/>
-          <h3 className="title is-3" data-aos="zoom-in">Tetris</h3>
-          <div className="columns is-multiline" data-aos="zoom-in" >
-            <div className="column is-half">
+          <div className ="container works">
+            <h3 className="title is-3" data-aos="zoom-in">Tetris</h3>
+            <div className="columns is-multiline" data-aos="zoom-in" >
+              <div className="column is-half">
 
-              <figure className="image ">
-                <img src="images/Tetris.png" />
-              </figure>
-            </div>
-            <div className="column is-half is-desktop is-vcentered">
-              <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
-
-              <div className="links">
-                <a href="https://github.com/tomjhinton/SEI-Project01" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-
-                <a href="https://tomjhinton.github.io/SEI-Project01/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                <figure className="image ">
+                  <img src="images/Tetris.png" />
+                </figure>
               </div>
+              <div className="column is-half is-desktop is-vcentered">
+                <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
+
+                <div className="links">
+                  <a href="https://github.com/tomjhinton/SEI-Project01" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                  <a href="https://tomjhinton.github.io/SEI-Project01/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
 
 
+              </div>
+            </div>
+            <h3 className="title is-3">.movieBase()</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image ">
+                  <img src="images/movieBase.png" />
+                </figure>
+              </div>
+              <div className="column is-half is-multiline">
+                <p className="desc"> .movieBase() was a site that allowed users to search for films and receive information about the film, an embedded video of its trailer and recommendations of similar films that they might also like. We used OMDB’s API to get initial information about a film that a user searched for and then fed that information into themoviedb’s API to find the URL of the film’s trailer and a selection of similar films. A user could then click on any of the similar films to receive the same information for that title. Within the project we pair coded on a single laptop so all aspects of the project were handled as part of a team.</p>
+                <a href="https://github.com/tomjhinton/SEI-Project02" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                <a href="https://tomjhinton.github.io/SEI-Project02/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+            <h3 className="title is-3">EventUp</h3>
+
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+                <figure className="image">
+                  <img src="images/EventUp.png" />
+                </figure>
+
+              </div>
+              <div className="column is-half">
+                <p className="desc">EventUp was a site that allowed promoters to upload details about their upcoming events. It also used Songkick’s API to provide information about events that had not been added by our users about the venues that the events would be held at. With this information we were able to use Mapbox to provide a map showing the location of the event on its page. I worked mainly on the form to allow people to add events to our database and on integrating the map.
+                </p>
+                <a href="https://github.com/tomjhinton/SEI-project03-fork" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                <a href="https://gaeventup.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+            <h3 className="title is-3">Intersitial</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/Inter.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">Interstitial was a site designed to allow users to showcase creative projects made with code and allowed people to post adverts looking for people who worked within a specific medium. I used a SQL backend to store information on the backend and then had to work out how to effectively display things on the frontend so that I could show code snippets and actual examples of the finished works in a way that was most informative.</p>
+                <a href="https://github.com/tomjhinton/sei-project-04" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://interstitialapp.herokuapp.com/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">cyberbloboftherings</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/cyberblob.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A 3D game built using Three.sj.The game itself is simplistic, you have to navigate a blob through a series of rings using the mouse. Contains a basic generative soundtrack created with Tone.js</p>
+                <a href="https://github.com/tomjhinton/cyberbloboftherings" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/cyberbloboftherings/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
+            <h3 className="title is-3">INCRENFINITY</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/INCRENFINITY.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A plotless infinite incremental game. The player picks the names of the resources to collect and the thing that produces them and then those resources increase by rates influenced by desicions made by the player. Inspired by Kittens Game and Universal Paperclips, styling has been kept to a bare minimum. Depending on your tastes these games are either highly addictive or unfathomably boring. </p>
+                <a href="https://github.com/tomjhinton/increnfinity" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/increnfinity/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">pastelDOA</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/pastel.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A canvas and React based game where the player has to keep inside a rotating rectangle. Direction controls refer to the original orientation of the rectangle so the player has to keep track of which way is up! Can also be controlled by touch on mobile devices.</p>
+                <a href="https://github.com/tomjhinton/pastelDOA" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/pastelDOA/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
             </div>
           </div>
-          <h3 className="title is-3">.movieBase()</h3>
-          <div className="columns" data-aos="zoom-in" >
-            <div className="column is-half">
-
-              <figure className="image ">
-                <img src="images/movieBase.png" />
-              </figure>
-            </div>
-            <div className="column is-half is-multiline">
-              <p className="desc"> .movieBase() was a site that allowed users to search for films and receive information about the film, an embedded video of its trailer and recommendations of similar films that they might also like. We used OMDB’s API to get initial information about a film that a user searched for and then fed that information into themoviedb’s API to find the URL of the film’s trailer and a selection of similar films. A user could then click on any of the similar films to receive the same information for that title. Within the project we pair coded on a single laptop so all aspects of the project were handled as part of a team.</p>
-              <a href="https://github.com/tomjhinton/SEI-Project02" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-
-              <a href="https://tomjhinton.github.io/SEI-Project02/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-            </div>
-          </div>
-          <h3 className="title is-3">EventUp</h3>
-
-          <div className="columns" data-aos="zoom-in" >
-            <div className="column is-half">
-              <figure className="image">
-                <img src="images/EventUp.png" />
-              </figure>
-
-            </div>
-            <div className="column is-half">
-              <p className="desc">EventUp was a site that allowed promoters to upload details about their upcoming events. It also used Songkick’s API to provide information about events that had not been added by our users about the venues that the events would be held at. With this information we were able to use Mapbox to provide a map showing the location of the event on its page. I worked mainly on the form to allow people to add events to our database and on integrating the map.
-              </p>
-              <a href="https://github.com/tomjhinton/SEI-project03-fork" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-
-              <a href="https://gaeventup.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
-            </div>
-          </div>
-          <h3 className="title is-3">Intersitial</h3>
-          <div className="columns" data-aos="zoom-in" >
-            <div className="column is-half">
-
-              <figure className="image">
-                <img src="images/Inter.png" />
-              </figure>
-            </div>
-            <div className="column is-half">
-              <p className="desc">Interstitial was a site designed to allow users to showcase creative projects made with code and allowed people to post adverts looking for people who worked within a specific medium. I used a SQL backend to store information on the backend and then had to work out how to effectively display things on the frontend so that I could show code snippets and actual examples of the finished works in a way that was most informative.</p>
-              <a href="https://github.com/tomjhinton/sei-project-04" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-              <a href="https://interstitialapp.herokuapp.com/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-            </div>
-          </div>
-
-          <h3 className="title is-3">cyberbloboftherings</h3>
-          <div className="columns" data-aos="zoom-in" >
-            <div className="column is-half">
-
-              <figure className="image">
-                <img src="images/cyberblob.png" />
-              </figure>
-            </div>
-            <div className="column is-half">
-              <p className="desc">A 3D game built using Three.sj.The game itself is simplistic, you have to navigate a blob through a series of rings using the mouse. Contains a basic generative soundtrack created with Tone.js</p>
-              <a href="https://github.com/tomjhinton/cyberbloboftherings" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-              <a href="https://tomjhinton.github.io/cyberbloboftherings/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-            </div>
-          </div>
-
 
           <footer className="footer" data-aos="zoom-in" >
             <h2 className="title is-2" data-aos="zoom-in">Contact Me...</h2>
@@ -251,6 +347,11 @@ class Home extends React.Component{
 
             <a href="https://www.instagram.com/svg.png/ " target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} />  SVG.PNG</a>
             <br/>
+
+            <a href="https://www.instagram.com/above_the_port/ " target="_blank"><FontAwesomeIcon icon={['fab', 'instagram']} />  above_the_port</a>
+            <br/>
+
+
 
             <a href="mailto:tomjhinton@gmail.com"> <FontAwesomeIcon icon="at"/> </a> tomjhinton@gmail.com
 
