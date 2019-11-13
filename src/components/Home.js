@@ -306,7 +306,7 @@ class Home extends React.Component{
               <div className="column is-half">
 
                 <figure className="image">
-                  <img src="images/INCRENFINITY.png" />
+                  <img src="images/Increnfinity.png" />
                 </figure>
               </div>
               <div className="column is-half">
