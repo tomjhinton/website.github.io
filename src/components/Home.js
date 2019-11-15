@@ -300,6 +300,22 @@ class Home extends React.Component{
               </div>
             </div>
 
+            <h3 className="title is-3">aleatoricBounce</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/bounce.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc"> Loosely gamified aleatoric computer music. There is a white square and some balls bouncing around. You control a rectangle, if you get it in the square you gain some lives, if a ball gets in the square, you lose a life and an extra ball is added. As the balls bounce they trigger Tone.js synthesised sounds. Part game, part composition, part web-site. </p>
+                <a href="https://github.com/tomjhinton/aleatoricBounce" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/aleatoricBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+          
+
 
             <h3 className="title is-3">INCRENFINITY</h3>
             <div className="columns" data-aos="zoom-in" >
