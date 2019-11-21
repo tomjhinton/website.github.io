@@ -209,7 +209,12 @@ class Home extends React.Component{
           <h2 className="title is-2" data-aos="zoom-in" >About Me</h2>
           <hr data-aos="zoom-in"/>
           <p className="about" data-aos="zoom-in" >
-          I started to learn how to code because of the art and music that I love. I had been studying Art History with a particular focus on the development of what would become known as Post-Internet Art. It brought into focus the possibility of using code as part of a creative practice, a way of actualising concepts and ideas in a visual and interesting way. At around the same time, I started to listen to more electronic music and kept reading about live-coded sets and visuals. I started to wonder how hard it could be to do it myself. It turns out it’s quite hard to do it well but it’s a lot of fun to learn how to do it badly. This led to me joining a Bootcamp taught by General Assembly as a way of learning how to do slightly more “useful” things with the same skill set.
+          I started to learn how to code after discovering the world of creative coding. I had been studying Art History with a particular focus on the development of what would become known as Post-Internet Art. It brought into focus the possibility of using code as part of a creative practice, a way of actualising concepts and ideas in a visual and interesting way.
+            <br/>
+            <br/>
+
+
+          I started to experiment with this myself, but it was in doing an immersive course at General Assembly that I learnt how to actualise fully fledged projects in a professional way. I am excited to be able to put these skills to work in a professional environment.
 
           </p>
           <br />
@@ -314,7 +319,7 @@ class Home extends React.Component{
                 <a href="https://tomjhinton.github.io/aleatoricBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
               </div>
             </div>
-          
+
 
 
             <h3 className="title is-3">INCRENFINITY</h3>
