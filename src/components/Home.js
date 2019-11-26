@@ -352,6 +352,56 @@ class Home extends React.Component{
               </div>
             </div>
           </div>
+          <br/>
+          <h2 className="title is-2" data-aos="zoom-in">Other</h2>
+          <hr data-aos="zoom-in"/>
+          <div className ="container works">
+            <h3 className="title is-3" data-aos="zoom-in">Interactive Canvas Animations</h3>
+            <div className="columns is-multiline" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image ">
+                  <img src="images/canvas.png" />
+                </figure>
+              </div>
+              <div className="column is-half is-desktop is-vcentered">
+                <p className="desc"> Experiments with canvas animations that are interactive when hovered over.</p>
+
+                <div className="links">
+                  <a href="https://github.com/tomjhinton/reactCanvasInter" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                  <a href="https://tomjhinton.github.io/reactCanvasInter/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
+
+
+              </div>
+            </div>
+
+            <h3 className="title is-3" data-aos="zoom-in">Three.js Animations</h3>
+            <div className="columns is-multiline" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image ">
+                  <img src="images/three.png" />
+                </figure>
+              </div>
+              <div className="column is-half is-desktop is-vcentered">
+                <p className="desc"> Experiments with Three.js animations.</p>
+
+                <div className="links">
+                  <a href="https://github.com/tomjhinton/reactThreeInter" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+
+                  <a href="https://tomjhinton.github.io/reactThreeInter/#/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+          </div>
 
           <footer className="footer" data-aos="zoom-in" >
             <h2 className="title is-2" data-aos="zoom-in">Contact Me...</h2>
