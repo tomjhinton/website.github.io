@@ -223,6 +223,134 @@ class Home extends React.Component{
           <h2 className="title is-2" data-aos="zoom-in">My Work</h2>
           <hr data-aos="zoom-in"/>
           <div className ="container works">
+
+            <h3 className="title is-3">catDetector</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/cat.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">How often have you felt like your life lacks real time webcam based Cat detection? Problem solved.  Uses the tensorflow image detection and classification model coco-ssd and a users webcam to detect the presence of cats. </p>
+                <a href="https://github.com/tomjhinton/catDetector" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/catDetector/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">cyberbloboftherings</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/cyberblob.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A 3D game built using Three.sj.The game itself is simplistic, you have to navigate a blob through a series of rings using the mouse. Contains a basic generative soundtrack created with Tone.js</p>
+                <a href="https://github.com/tomjhinton/cyberbloboftherings" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/cyberbloboftherings/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
+            <h3 className="title is-3">speakAndSpells</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/speak.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">Navigate a block through a gap in an advancing wall by using your voice. The games simplistic but was mainly an excuse to make use of the speechCommands TensorFlow model. It works reasonably well though the failings do add a level of frustartion that is quite amusing. You will find yourself angrily shouting at the screen at points. </p>
+                <a href="https://github.com/tomjhinton/speakAndSpells" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/speakAndSpells/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">alephBounce</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/aleph.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">I made it look like that on purpose! alephBounce is a motion controlled 3D game with a Tone.js soundtrack. It uses Posenet a ML trained real-time pose estimation model to track a players movements, by moving their arms they can move a block on the screen. They have to dodge an increasing number of bouncing balls. The animation and rendering are Three.js and the physics simulations are done by Cannon.js.</p>
+                <a href="https://github.com/tomjhinton/alephBounce" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/alephBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
+            <h3 className="title is-3">aleatoricBounce</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/bounce.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc"> Loosely gamified aleatoric computer music. There is a white square and some balls bouncing around. You control a rectangle, if you get it in the square you gain some lives, if a ball gets in the square, you lose a life and an extra ball is added. As the balls bounce they trigger Tone.js synthesised sounds. Part game, part composition, part web-site. </p>
+                <a href="https://github.com/tomjhinton/aleatoricBounce" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/aleatoricBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
+
+            <h3 className="title is-3">INCRENFINITY</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/Increnfinity.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A plotless infinite incremental game. The player picks the names of the resources to collect and the thing that produces them and then those resources increase by rates influenced by desicions made by the player. Inspired by Kittens Game and Universal Paperclips, styling has been kept to a bare minimum. Depending on your tastes these games are either highly addictive or unfathomably boring. </p>
+                <a href="https://github.com/tomjhinton/increnfinity" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/increnfinity/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">pastelDOA</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/pastel.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A canvas and React based game where the player has to keep inside a rotating rectangle. Direction controls refer to the original orientation of the rectangle so the player has to keep track of which way is up! Can also be controlled by touch on mobile devices.</p>
+                <a href="https://github.com/tomjhinton/pastelDOA" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/pastelDOA/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+            <h3 className="title is-3">ebm</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/ebm.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A canvas and React based game where the player has to keep inside a rotating rectangle. Direction controls refer to the original orientation of the rectangle so the player has to keep track of which way is up! Can also be controlled by touch on mobile devices.</p>
+                <a href="https://github.com/tomjhinton/ebm" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/ebm/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
+
+
             <h3 className="title is-3" data-aos="zoom-in">Tetris</h3>
             <div className="columns is-multiline" data-aos="zoom-in" >
               <div className="column is-half">
@@ -290,67 +418,10 @@ class Home extends React.Component{
               </div>
             </div>
 
-            <h3 className="title is-3">cyberbloboftherings</h3>
-            <div className="columns" data-aos="zoom-in" >
-              <div className="column is-half">
-
-                <figure className="image">
-                  <img src="images/cyberblob.png" />
-                </figure>
-              </div>
-              <div className="column is-half">
-                <p className="desc">A 3D game built using Three.sj.The game itself is simplistic, you have to navigate a blob through a series of rings using the mouse. Contains a basic generative soundtrack created with Tone.js</p>
-                <a href="https://github.com/tomjhinton/cyberbloboftherings" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-                <a href="https://tomjhinton.github.io/cyberbloboftherings/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-              </div>
-            </div>
-
-            <h3 className="title is-3">aleatoricBounce</h3>
-            <div className="columns" data-aos="zoom-in" >
-              <div className="column is-half">
-
-                <figure className="image">
-                  <img src="images/bounce.png" />
-                </figure>
-              </div>
-              <div className="column is-half">
-                <p className="desc"> Loosely gamified aleatoric computer music. There is a white square and some balls bouncing around. You control a rectangle, if you get it in the square you gain some lives, if a ball gets in the square, you lose a life and an extra ball is added. As the balls bounce they trigger Tone.js synthesised sounds. Part game, part composition, part web-site. </p>
-                <a href="https://github.com/tomjhinton/aleatoricBounce" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-                <a href="https://tomjhinton.github.io/aleatoricBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-              </div>
-            </div>
 
 
 
-            <h3 className="title is-3">INCRENFINITY</h3>
-            <div className="columns" data-aos="zoom-in" >
-              <div className="column is-half">
 
-                <figure className="image">
-                  <img src="images/Increnfinity.png" />
-                </figure>
-              </div>
-              <div className="column is-half">
-                <p className="desc">A plotless infinite incremental game. The player picks the names of the resources to collect and the thing that produces them and then those resources increase by rates influenced by desicions made by the player. Inspired by Kittens Game and Universal Paperclips, styling has been kept to a bare minimum. Depending on your tastes these games are either highly addictive or unfathomably boring. </p>
-                <a href="https://github.com/tomjhinton/increnfinity" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-                <a href="https://tomjhinton.github.io/increnfinity/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-              </div>
-            </div>
-
-            <h3 className="title is-3">pastelDOA</h3>
-            <div className="columns" data-aos="zoom-in" >
-              <div className="column is-half">
-
-                <figure className="image">
-                  <img src="images/pastel.png" />
-                </figure>
-              </div>
-              <div className="column is-half">
-                <p className="desc">A canvas and React based game where the player has to keep inside a rotating rectangle. Direction controls refer to the original orientation of the rectangle so the player has to keep track of which way is up! Can also be controlled by touch on mobile devices.</p>
-                <a href="https://github.com/tomjhinton/pastelDOA" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
-                <a href="https://tomjhinton.github.io/pastelDOA/" target="_blank"><FontAwesomeIcon icon="link"/></a>
-              </div>
-            </div>
           </div>
           <br/>
           <h2 className="title is-2" data-aos="zoom-in">Other</h2>
