@@ -303,6 +303,23 @@ class Home extends React.Component{
 
 
 
+
+            <h3 className="title is-3">magToei</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/mag.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">Recursive generative music using Magenta and the Tensorflow model drum_kit_rnn, it is initially using the first 14 notes of Twinkle Twinkle Little Star as an input but then feeds its own generation back into itself to create further patterns.</p>
+                <a href="https://github.com/tomjhinton/magToei" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/magToei/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
+
             <h3 className="title is-3">INCRENFINITY</h3>
             <div className="columns" data-aos="zoom-in" >
               <div className="column is-half">
@@ -317,6 +334,7 @@ class Home extends React.Component{
                 <a href="https://tomjhinton.github.io/increnfinity/" target="_blank"><FontAwesomeIcon icon="link"/></a>
               </div>
             </div>
+
 
             <h3 className="title is-3">pastelDOA</h3>
             <div className="columns" data-aos="zoom-in" >
