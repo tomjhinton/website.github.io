@@ -264,7 +264,7 @@ class Home extends React.Component{
                 </figure>
               </div>
               <div className="column is-half">
-                <p className="desc">Navigate a block through a gap in an advancing wall by using your voice. The games simplistic but was mainly an excuse to make use of the speechCommands TensorFlow model. It works reasonably well though the failings do add a level of frustartion that is quite amusing. You will find yourself angrily shouting at the screen at points. </p>
+                <p className="desc">Navigate a block through a gap in an advancing wall by using your voice. The games simplistic but was mainly an excuse to make use of the speechCommands TensorFlow model. It works reasonably well though the failings do add a level of frustration that is quite amusing. You will find yourself angrily shouting at the screen at points. </p>
                 <a href="https://github.com/tomjhinton/speakAndSpells" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
                 <a href="https://tomjhinton.github.io/speakAndSpells/" target="_blank"><FontAwesomeIcon icon="link"/></a>
               </div>
