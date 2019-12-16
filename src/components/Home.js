@@ -254,6 +254,21 @@ class Home extends React.Component{
               </div>
             </div>
 
+            <h3 className="title is-3">freeside</h3>
+            <div className="columns" data-aos="zoom-in" >
+              <div className="column is-half">
+
+                <figure className="image">
+                  <img src="images/freeside.png" />
+                </figure>
+              </div>
+              <div className="column is-half">
+                <p className="desc">A 3D game built using Three.js and Cannon.js. Soundtrack is generated using Magenta and the Tensorflow model drum_kit_rnn. Mainly an experiment in utilising the Cannon.js physics engine. Essentially I guess a platform game as the player has to bounce a path along a series of moving platforms. </p>
+                <a href="https://github.com/tomjhinton/freeside" target="_blank"><IconGithub className="github"  width={'1em'} height={'1em'} /> </a>
+                <a href="https://tomjhinton.github.io/freeside/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+            </div>
+
 
             <h3 className="title is-3">speakAndSpells</h3>
             <div className="columns" data-aos="zoom-in" >
