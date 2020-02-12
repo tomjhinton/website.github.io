@@ -21,6 +21,22 @@ module.exports = {
       {
         test: /\.txt$/i,
         use: 'raw-loader'
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader'
+          }
+        ]
       }
     ]
   },
@@ -37,7 +53,7 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html',
       inject: 'body',
-      favicon: 'src/images/favicon.png'
+      favicon: 'src/assets/favicon.png'
     }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images' }

@@ -1,243 +1,227 @@
+
+@font-face {
+  font-family: "Passio";
+  src: url("assets/Passio-Graphis.otf") format("opentype");
+}
+
 *{
-  font-family: Helvetica;
-  color: black;
-  font-size: 20px;
+  font-weight:bold;
 }
+@mixin circle {
 
-.desc{
-  display: inline-flex;
-  font-size: 15px;
+  transition: all 2000ms ease;
+  min-height: 45vh;
+  font-family: 'Passio';
+  color:white;
+  background-color: white;
+  clip-path: circle(4.2% at 20% 20%);
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 40vw;
   justify-content: center;
+  padding: 2vw;
+  filter: brightness(0%);
+
+      &:hover {
+        font-family: 'Passio';
+        color:black;
+        background-color: white;
+        clip-path: circle(140.2% at 50% 50%);
+        filter: brightness(100%);
+      }
+
+      &:visited {
+         color: green;
+      }
 
 }
+
+$base-color: #036;
+
+@for $i from 1 through 21 {
+
+  .block#{$i} {
+    width: 40vw;
+    height: 25vh;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 250px;
+    margin-left:  random(50) + vw;
+    margin-right:   20vw;
+    z-index: #{$i};
+    }
+}
+
+
+.main{
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 2vw;
+}
+
+.block{
+
+  //border: 1px solid black;
+  width: 40vw;
+  height: 25vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 450px;
+  padding: 2vw;
+}
+.block:hover{
+
+}
+
+
+.circle{
+
+  @include circle
+
+  figure.image{
+
+  }
+  span{
+    margin-right: 5px;
+  }
+
+}
+
+
+img{
+  margin-bottom: 1vh;
+}
+
 
 .about{
-  font-size: 15px;
-}
-
-#canvas-complex {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-}
-
-hr{
-  border: 2px solid black;
+  font-size: 2em;
 }
 
 
-div.container.header{
-    position: absolute;
-    width: 100%;
-    margin: 0px;
-}
-
-.devicon-git-plain {
-  max-width: 2em;
-}
-
-@mixin grayscale_element($value) {
-    -webkit-filter: #{"grayscale(#{$value})"};
-    -moz-filter: #{"grayscale(#{$value})"};
-    filter:#{"grayscale(#{$value})"};
-}
-
-
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-}
-
-
-
-.grayscale {
-    @include grayscale_element(100%);
-    transition: all 200ms ease-in-out;
-    &:hover {
-        @include grayscale_element(0);
-        animation: rotation 2s infinite linear;
-    }
-    display: inline-block;
+#points{
+  width: 100%;
+  z-index: -2;
+  position:absolute;
 
 }
 
-
-// @mixin glitchCopy {
-// 		content: attr(data-text);
-// 		position: absolute;
-// 		top: 0;
-// 		left: 0;
-// 		width: 100%;
-// 		height: 100%;
-// }
-
-// .glitch  {
-//   &:hover{
-// 	position: relative;
-// 	color: black;
-// 	/* Animation provies a slight random skew. Check bottom of doc
-// 	for more information on how to random skew. */
-// 	animation: glitch-skew 1s infinite linear alternate-reverse;
-//
-// 	// Creates a copy before our text.
-// 	&::before{
-// 		// Duplicates our text with the mixin.
-// 		@include glitchCopy;
-// 		// Scoots text slightly to the left for the color offset.
-// 		left: 2px;
-// 		// Creates the color 'shadow' that happens on the glitch.
-// 		text-shadow: -2px 0 #ff00c1;
-// 		/* Creates an initial clip for our glitch. This works in
-// 		a typical top,right,bottom,left fashion and creates a mask
-// 		to only show a certain part of the glitch at a time. */
-// 		clip: rect(44px, 450px, 56px, 0);
-// 		/* Runs our glitch-anim defined below to run in a 5s loop, infinitely,
-// 		with an alternating animation to keep things fresh. */
-// 		animation: glitch-anim 5s infinite linear alternate-reverse;
-// 	}
-//
-// 	// Creates a copy after our text. Note comments from ::before.
-// 	&::after {
-// 		@include glitchCopy;
-// 		left: -2px;
-// 		text-shadow: -2px 0 #00fff9, 2px 2px #ff00c1;
-// 		animation: glitch-anim2 1s infinite linear alternate-reverse;
-// 	}
-// }
-//
-// /* Creates an animation with 20 steaps. For each step, it calculates
-// a percentage for the specific step. It then generates a random clip
-// box to be used for the random glitch effect. Also adds a very subtle
-// skew to change the 'thickness' of the glitch.*/
-// @keyframes glitch-anim {
-//   $steps: 20;
-//   @for $i from 0 through $steps {
-//     #{percentage($i*(1/$steps))} {
-//       clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-// 			transform: skew((random(100) / 100) + deg);
-//     }
-//   }
-// }
-//
-// // Same deal, just duplicated for ultra randomness.
-// @keyframes glitch-anim2 {
-//   $steps: 20;
-//   @for $i from 0 through $steps {
-//     #{percentage($i*(1/$steps))} {
-//       clip: rect(random(100)+px, 9999px, random(100)+px, 0);
-// 			transform: skew((random(100) / 100) + deg);
-//     }
-//   }
-// }
-//
-// // Does the same deal as before, but now only skews. Used for main text.
-// @keyframes glitch-skew {
-//   $steps: 10;
-//   @for $i from 0 through $steps {
-//     #{percentage($i*(1/$steps))} {
-//       transform: skew((random(10) - 5) + deg);
-//     }
-//   }
-// }
-//}
-
-.column{
-
-
-}
-
-.logo{
-  margin-left: 40px;
+.name{
+  font-family: 'Passio';
+  font-weight:bold;
+  font-size: 3em;
   color: black;
 }
 
-.footer{
-  font-size: 15px;
+.triangle{
+  min-height: 45vh;
+  margin-top: 10px;
+  transition: all 2000ms ease;
+  font-family: 'Passio';
+  color:white;
   background-color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 40vw;
+  justify-content: center;
+  padding: 2vw;
+  margin-bottom: 5vh;
+  clip-path: polygon(0 0,
+   50% 0,
+   10% 0,
+   50% 0%,
+   10% 0%,
+   0 10%);
+
+  filter: brightness(0%);
+
+}
+
+.triangle:hover{
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  margin-bottom: 5vh;
+  clip-path: polygon(0 0,
+   50% 0,
+   100% 0,
+   100% 50%,
+   100% 100%,
+   0 200%);
+
+  filter: brightness(100%);
+}
+
+
+.section{
+  font-family: 'Passio';
+  font-weight:bold;
+  color: black;
+  font-size: 4em;
+  text-decoration: underline;
+  margin-bottom: 2px;
+  z-index: 3;
+  margin-left: 45vw;
+  margin-right: 40vw;
+}
+
+
+.hr{
+
+
+}
+
+.head{
+  background-image: url('assets/tom.png');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: space;
+  background-size: contain;
+  background-position: center;
+  margin-bottom: 5vh;
+}
+
+.navbar{
   text-decoration: none;
+  font-family: 'Passio';
+  height:2vh;
+  background-color: rgba(0,0,0,1);
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
   a{
-    text-decoration: none;
-    font-size: 15px;
+    color: white;
+  }
+
+}
+a{
+  text-decoration: none;
+
+}
+.links{
+  margin-top: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2em;
+  a{
     color: black;
   }
 }
 
-a{
-  text-decoration: none;
+.SVGInline{
+  width: 1vw;
+  margin: 0;
+  margin: 0;
 }
 
-
-.modal-card-body{
-  background-color: black;
-  color: #4AF626;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  font-size: 0.6em;
-  font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+.GithubOriginal{
+  margin: 0;
 }
+.github{
 
-.modal-card-head{
-  font-weight: bold;
-  border-radius: 0;
-}
+    margin: 0;
 
-
-.tooltip {
-  position: relative;
-  display: inline-block;
-
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  color: black;
-  text-align: center;
-  padding: 5px 0;
-  border-radius: 6px;
-
-  /* Position the tooltip text - see examples below! */
-  position: absolute;
-  z-index: 1;
-
-  background: linear-gradient(147deg, #eebdea, #e0eebd, #bdeeee);
-  background-size: 600% 600%;
-
--webkit-animation: AnimationName 4s ease infinite;
--moz-animation: AnimationName 4s ease infinite;
-animation: AnimationName 4s ease infinite;
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:45% 0%}
-    50%{background-position:56% 100%}
-    100%{background-position:45% 0%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:45% 0%}
-    50%{background-position:56% 100%}
-    100%{background-position:45% 0%}
-}
-@keyframes AnimationName {
-    0%{background-position:45% 0%}
-    50%{background-position:56% 100%}
-    100%{background-position:45% 0%}
-}
-
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
 }
