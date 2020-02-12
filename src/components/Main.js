@@ -224,6 +224,16 @@ function render(){
       composer.render(clock.getDelta())
     }
 
+    function animate() {
+
+      mesh.rotation.x+=0.01
+        mesh.rotation.y+=0.001
+
+    /* render scene and camera */
+    renderer.render(scene,camera)
+    requestAnimationFrame(animate)
+  }
+
 
 class Main extends React.Component{
   constructor(){
@@ -244,10 +254,18 @@ class Main extends React.Component{
   }
 
 
+
   componentDidMount(){
     document.documentElement.setAttribute("data-browser", navigator.userAgent)
     console.log(navigator.userAgent)
+    if(!this.isMobileDevice()){
     this.tick()
+  }
+  if(this.isMobileDevice()){
+    camera.position.z = 100;
+      
+  animate()
+}
     this.setState({ height: window.document.body.offsetHeight-(document.documentElement.clientHeight/2) })
     this.setState({ width: window.document.body.offsetWidth-20 })
     window.addEventListener('mousemove', this.onMouseMove.bind(this));
@@ -260,6 +278,10 @@ class Main extends React.Component{
 
 
   }
+
+   isMobileDevice() {
+      return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+  };
 
   tick(){
           waterTexture.update()
