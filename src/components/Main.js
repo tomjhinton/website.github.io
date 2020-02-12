@@ -675,7 +675,7 @@ class Main extends React.Component{
         <div className='block7'>
           <p className='name'>Tetris</p>
           <div className='circle'>
-            <img src="assets/tetris.png" />
+            <img src="assets/Tetris.png" />
             <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
 
                   <div className="links">
