@@ -17,6 +17,9 @@ import * as THREE from 'three'
 import { EffectComposer, RenderPass ,Effect, EffectPass} from 'postprocessing'
 import IconGithub from 'react-devicon/github/original'
 
+function  isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 const fragment = `
 
@@ -170,7 +173,9 @@ let renderer = new THREE.WebGLRenderer({
        });
        renderer.setSize(window.innerWidth, window.innerHeight);
        renderer.setPixelRatio(window.devicePixelRatio);
+       if(!isMobileDevice()){
        document.body.prepend(renderer.domElement);
+     }
        const scene = new THREE.Scene()
 
        let camera = new THREE.PerspectiveCamera(
@@ -201,6 +206,7 @@ scene.background = new THREE.Color( 0xFFFFFF )
           scene.add(mesh);
 
           const renderPass = new RenderPass(scene, camera);
+          if(!isMobileDevice()){
           renderPass.renderToScreen = true;
 
 
@@ -215,6 +221,7 @@ scene.background = new THREE.Color( 0xFFFFFF )
     waterPass.renderToScreen = true;
   composer.addPass(renderPass);
   composer.addPass(waterPass);
+}
 
         composer.addPass(renderPass)
         console.log(composer)
@@ -233,6 +240,7 @@ function render(){
     renderer.render(scene,camera)
     requestAnimationFrame(animate)
   }
+
 
 
 class Main extends React.Component{
@@ -260,16 +268,13 @@ class Main extends React.Component{
     console.log(navigator.userAgent)
     if(!this.isMobileDevice()){
     this.tick()
+    this.drawPoints()
   }
-  if(this.isMobileDevice()){
-    camera.position.z = 100;
-      
-  animate()
-}
+
     this.setState({ height: window.document.body.offsetHeight-(document.documentElement.clientHeight/2) })
     this.setState({ width: window.document.body.offsetWidth-20 })
     window.addEventListener('mousemove', this.onMouseMove.bind(this));
-    this.drawPoints()
+
 
   }
 
@@ -475,7 +480,7 @@ class Main extends React.Component{
     return (
 
       <div className='main '>
-
+      {isMobileDevice() && <img src='./assets/tom.png' id='head'/>}
 
         <canvas id="points" width={window.document.body.offsetWidth} height={10950}>  </canvas>
 
