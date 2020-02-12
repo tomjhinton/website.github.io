@@ -9,28 +9,28 @@
 }
 @mixin circle {
 
-  transition: all 2000ms ease;
+  -webkit-transition: all 2000ms ease;
   min-height: 45vh;
   font-family: 'Passio';
   color:white;
   background-color: white;
   -webkit-clip-path: circle(4.2% at 20% 20%);
-  clip-path: circle(4.2% at 20% 20%);
+
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
   width: 40vw;
   justify-content: center;
   padding: 2vw;
-  filter: brightness(0%);
+  -webkit-filter: brightness(0%);
 
       &:hover {
         font-family: 'Passio';
         color:black;
         background-color: white;
         -webkit-clip-path: circle(140.2% at 50% 50%);
-        clip-path: circle(140.2% at 50% 50%);
-        filter: brightness(100%);
+
+        -webkit-filter: brightness(100%);
       }
 
       &:visited {
@@ -142,7 +142,7 @@ img{
     50% 0%,
     10% 0%,
     0 10%);
-  filter: brightness(0%);
+  -webkit-filter: brightness(0%);
 
 }
 
@@ -164,7 +164,7 @@ img{
     100% 100%,
     0 200%);
 
-  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
 }
 
 

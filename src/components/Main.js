@@ -245,9 +245,9 @@ class Main extends React.Component{
 
 
   componentDidMount(){
+    document.documentElement.setAttribute("data-browser", navigator.userAgent)
+    console.log(navigator.userAgent)
     this.tick()
-    console.log(window.document.body.offsetHeight)
-    console.log(window.document.body.offsetWidth)
     this.setState({ height: window.document.body.offsetHeight-(document.documentElement.clientHeight/2) })
     this.setState({ width: window.document.body.offsetWidth-20 })
     window.addEventListener('mousemove', this.onMouseMove.bind(this));
