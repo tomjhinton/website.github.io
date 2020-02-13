@@ -136,7 +136,7 @@ a{
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-  width: 40vw;
+  //width: 45vw;
   justify-content: center;
   padding: 2vw;
   margin-bottom: 5vh;
@@ -162,7 +162,7 @@ background-color: white;
 flex-wrap: wrap;
 align-items: center;
 align-content: center;
-width: 40vw;
+//width: 45vw;
 justify-content: center;
 padding: 2vw;
 
@@ -342,4 +342,30 @@ span{
   display:  none;
 
 }
+
+.desc{
+  font-size: 2em;
+}
+
+
+@for $i from 1 through 21 {
+
+  .block#{$i} {
+
+    //min-height: 25vh;
+    align-items: center;
+    justify-content: center;
+    //margin-bottom: 250px;
+    margin: auto;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    // z-index: #{$i};
+    }
+}
+
+
+.contact{
+  font-size: 2em;
+}
+
 }

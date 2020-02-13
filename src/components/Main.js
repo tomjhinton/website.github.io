@@ -499,7 +499,7 @@ class Main extends React.Component{
 
         </div>
 
-        <div className='block20'>
+        <div className='block20 contact'>
           <p className='name' id='contact'>Contact</p>
           <div className='triangle'>
             <p>
