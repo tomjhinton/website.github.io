@@ -480,7 +480,7 @@ class Main extends React.Component{
     return (
 
       <div className='main '>
-      {isMobileDevice() && <img src='./assets/tom.png' id='head'/>}
+      {isMobileDevice() && <div  id='head'/>}
 
         <canvas id="points" width={window.document.body.offsetWidth} height={10950}>  </canvas>
 

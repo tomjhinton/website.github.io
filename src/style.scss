@@ -5,7 +5,16 @@
 }
 
 
+#head{
+  background-image: url('./assets/tom.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 60%;
+  background-position: center;
+  margin-left: 10% ;
 
+}
 
 *{
   font-weight:bold;
@@ -17,91 +26,8 @@
 
 
 
-@mixin circle {
-
-  // -webkit-transition: all 2000ms ease;
-
-  min-height: 45vh;
-  font-family: 'Passio';
-  color:white;
-  background-color: white;
-  -webkit-clip-path: circle(4.2% at 20% 20%);
 
 
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  width: 40vw;
-  justify-content: center;
-  padding: 2vw;
-  -webkit-filter: brightness(0%);
-
-      &:hover {
-        font-family: 'Passio';
-        color:black;
-        background-color: white;
-        -webkit-clip-path: circle(140.2% at 50% 50%);
-
-        -webkit-filter: brightness(100%);
-      }
-
-      &:visited {
-         color: green;
-      }
-
-}
-
-$base-color: #036;
-
-@for $i from 1 through 21 {
-
-  .block#{$i} {
-    width: 40vw;
-    height: 25vh;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 250px;
-    margin-left:  random(50) + vw;
-    margin-right:   20vw;
-    z-index: #{$i};
-    }
-}
-
-
-.main{
-
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding: 2vw;
-}
-
-.block{
-
-  //border: 1px solid black;
-  width: 40vw;
-  height: 25vh;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 450px;
-  padding: 2vw;
-}
-.block:hover{
-
-}
-
-
-.circle{
-
-  @include circle
-
-  figure.image{
-
-  }
-  span{
-    margin-right: 5px;
-  }
-
-}
 
 
 img{
@@ -114,12 +40,7 @@ img{
 }
 
 
-#points{
-  width: 100%;
-  z-index: -2;
-  position:absolute;
 
-}
 
 .name{
   font-family: 'Passio';
@@ -128,56 +49,7 @@ img{
   color: black;
 }
 
-.triangle{
-  min-height: 45vh;
-  margin-top: 10px;
-  // transition: all 2000ms ease;
-  font-family: 'Passio';
-  color:white;
-  background-color: white;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: center;
-  width: 40vw;
-  justify-content: center;
-  padding: 2vw;
-  margin-bottom: 5vh;
-  -webkit-clip-path: polygon(0 0,
-   50% 0,
-   10% 0,
-   50% 0%,
-   10% 0%,
-   0 10%);
-   clip-path: polygon(0 0,
-    50% 0,
-    10% 0,
-    50% 0%,
-    10% 0%,
-    0 10%);
-  -webkit-filter: brightness(0%);
 
-}
-
-.triangle:hover{
-  font-family: 'Passio';
-  color:black;
-  background-color: white;
-  margin-bottom: 5vh;
-  -webkit-clip-path: polygon(0 0,
-   50% 0,
-   100% 0,
-   100% 50%,
-   100% 100%,
-   0 200%);
-   clip-path: polygon(0 0,
-    50% 0,
-    100% 0,
-    100% 50%,
-    100% 100%,
-    0 200%);
-
-  -webkit-filter: brightness(100%);
-}
 
 
 .section{
@@ -198,17 +70,18 @@ img{
 
 }
 
-.head{
+#head{
   background-image: url('assets/tom.png');
   width: 100vw;
-  height: 100vh;
-  background-repeat: space;
+  height: 50vh;
+  background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
   margin-bottom: 5vh;
 }
 
 .navbar{
+  margin-top: 10vh;
   text-decoration: none;
   font-family: 'Passio';
   height:2vh;
@@ -249,4 +122,224 @@ a{
 
     margin: 0;
 
+}
+
+
+
+.triangle{
+  //min-height: 45vh;
+  margin-top: 10px;
+  // transition: all 2000ms ease;
+  font-family: 'Passio';
+  color:black;
+  background-color: white;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 40vw;
+  justify-content: center;
+  padding: 2vw;
+  margin-bottom: 5vh;
+
+
+}
+
+
+
+
+
+
+@mixin circle {
+
+// -webkit-transition: all 2000ms ease;
+
+//min-height: 45vh;
+font-family: 'Passio';
+color:black;
+background-color: white;
+
+
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+width: 40vw;
+justify-content: center;
+padding: 2vw;
+
+
+
+
+    &:visited {
+       color: green;
+    }
+
+}
+
+.circle{
+
+@include circle
+
+figure.image{
+
+}
+span{
+  margin-right: 5px;
+}
+}
+
+
+@media (hover: hover) {
+
+  #points{
+    width: 100%;
+    z-index: -2;
+    position:absolute;
+
+  }
+
+  .triangle{
+    min-height: 45vh;
+    margin-top: 10px;
+    // transition: all 2000ms ease;
+    font-family: 'Passio';
+    color:white;
+    background-color: white;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    width: 40vw;
+    justify-content: center;
+    padding: 2vw;
+    margin-bottom: 5vh;
+    -webkit-clip-path: polygon(0 0,
+     50% 0,
+     10% 0,
+     50% 0%,
+     10% 0%,
+     0 10%);
+     clip-path: polygon(0 0,
+      50% 0,
+      10% 0,
+      50% 0%,
+      10% 0%,
+      0 10%);
+    -webkit-filter: brightness(0%);
+
+  }
+
+  .triangle:hover{
+    font-family: 'Passio';
+    color:black;
+    background-color: white;
+    margin-bottom: 5vh;
+    -webkit-clip-path: polygon(0 0,
+     50% 0,
+     100% 0,
+     100% 50%,
+     100% 100%,
+     0 200%);
+     clip-path: polygon(0 0,
+      50% 0,
+      100% 0,
+      100% 50%,
+      100% 100%,
+      0 200%);
+
+    -webkit-filter: brightness(100%);
+  }
+
+
+
+
+@mixin circle {
+
+  // -webkit-transition: all 2000ms ease;
+
+  min-height: 45vh;
+  font-family: 'Passio';
+  color:white;
+  background-color: white;
+  -webkit-clip-path: circle(4.2% at 20% 20%);
+
+
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  width: 40vw;
+  justify-content: center;
+  padding: 2vw;
+  -webkit-filter: brightness(0%);
+
+      &:hover {
+        font-family: 'Passio';
+        color:black;
+        background-color: white;
+        -webkit-clip-path: circle(140.2% at 50% 50%);
+
+        -webkit-filter: brightness(100%);
+      }
+
+      &:visited {
+         color: green;
+      }
+
+}
+
+.circle{
+
+  @include circle
+
+  figure.image{
+
+  }
+  span{
+    margin-right: 5px;
+  }
+
+}
+
+
+@for $i from 1 through 21 {
+
+  .block#{$i} {
+    width: 40vw;
+    //min-height: 25vh;
+    align-items: center;
+    justify-content: center;
+    //margin-bottom: 250px;
+    margin-left:  random(50) + vw;
+    margin-right:   20vw;
+    // z-index: #{$i};
+    }
+}
+}
+
+.main{
+
+  display: inline-flex;
+  flex-wrap: wrap;
+  padding: 2vw;
+  justify-content: space-evenly;
+}
+
+.block{
+
+  //border: 1px solid black;
+  width: 40vw;
+  //height: 25vh;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 450px;
+  padding: 2vw;
+}
+.block:hover{
+
+}
+
+@media (hover: none) {
+#points{
+
+  display:  none;
+
+}
 }
