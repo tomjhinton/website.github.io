@@ -763,7 +763,7 @@ class Main extends React.Component{
           <p className='name'>Epiphyte</p>
           <div className='circle'>
             <img src="assets/epiphyte.png" />
-            <p className="desc">A crytocurrency investment simulator. Each user is give $100 to invest which they can spend across 20 digital assets. Front-end created with React and the back-end uses  a Python SQL database.
+            <p className="desc">A cryptocurrency investment simulator. Each user is give $100 to invest which they can spend across 20 digital assets. Front-end created with React and the back-end uses  a Python SQL database.
                 </p>
                 <div className='links'>
                 <a href="https://github.com/tomjhinton/epiphyte" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
