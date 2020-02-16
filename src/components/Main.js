@@ -731,6 +731,20 @@ class Main extends React.Component{
           </div>
         </div>
 
+        <div className='block2'>
+          <p className='name'>Neurot467</p>
+          <div className='triangle'>
+            <img src="assets/neurot468.png" />
+            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the resuslts are saved to a SQL server in base64.  New images are created hourly and displayed on simulated cloth using Three.js and Cannon.js.
+                </p>
+                <div className='links'>
+                <a href="https://github.com/tomjhinton/neurot468" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
+
+                <a href="https://neurot468.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
+          </div>
+        </div>
+
         <div className='block5'>
           <p className='name'>EventUp</p>
           <div className='circle'>
@@ -774,6 +788,8 @@ class Main extends React.Component{
             <a href="https://twitter.com/neurot466" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} />  neurot466 </a> Tweets generative artworks created with Python.
           </div>
         </div>
+
+
 
         <div className='block2'>
           <p className='name'>movieBase</p>
