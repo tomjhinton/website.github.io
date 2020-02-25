@@ -482,7 +482,7 @@ class Main extends React.Component{
       <div className='main '>
       {isMobileDevice() && <div  id='head'/>}
 
-        <canvas id="points" width={window.document.body.offsetWidth} height={15550}>  </canvas>
+        <canvas id="points" width={window.document.body.offsetWidth} height={14550}>  </canvas>
 
 
         <div className='nav navbar is-fixed-bottom'>
