@@ -482,7 +482,7 @@ class Main extends React.Component{
       <div className='main '>
       {isMobileDevice() && <div  id='head'/>}
 
-        <canvas id="points" width={window.document.body.offsetWidth} height={11550}>  </canvas>
+        <canvas id="points" width={window.document.body.offsetWidth} height={15550}>  </canvas>
 
 
         <div className='nav navbar is-fixed-bottom'>
@@ -490,7 +490,7 @@ class Main extends React.Component{
         <a href='#ml'>ML Controlled</a>  <a href='#games'>Games</a> <a  href='#fullS'>Full Stack Sites</a> <a href='#other'>Other</a>
         </div>
 
-        <div className='block21'>
+        <div className='block25'>
           <p className='name'  id='about'>About Me</p>
           <div className='circle  about'>
 
@@ -499,7 +499,7 @@ class Main extends React.Component{
 
         </div>
 
-        <div className='block20 contact'>
+        <div className='block24 contact'>
           <p className='name' id='contact'>Contact</p>
           <div className='triangle'>
             <p>
@@ -535,7 +535,7 @@ class Main extends React.Component{
         </div>
 
 
-        <div className='block19'>
+        <div className='block23'>
           <p className='name'>Cat Detector</p>
           <div className='circle'>
 
@@ -555,7 +555,7 @@ class Main extends React.Component{
 
 
 
-        <div className='block18'>
+        <div className='block22'>
           <p className='name'>speakAndSpells</p>
           <div className='triangle'>
             <img src="assets/speak.png" />
@@ -567,7 +567,7 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block17'>
+        <div className='block21'>
           <p className='name'>alephBounce</p>
           <div className='circle'>
             <img src="assets/aleph.png" />
@@ -581,7 +581,7 @@ class Main extends React.Component{
 
 
 
-        <div className='block16'>
+        <div className='block20'>
           <p className='name'>EBM</p>
           <div className='triangle'>
             <img src="assets/ebm.png" />
@@ -594,7 +594,7 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block15'>
+        <div className='block19'>
           <p className='name'>emokinesis</p>
           <div className='circle'>
             <img src="assets/emo.png" />
@@ -606,7 +606,7 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block14'>
+        <div className='block18'>
           <p className='name'>niceGuys</p>
           <div className='triangle'>
             <img src="assets/nice.png" />
@@ -618,7 +618,7 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block13'>
+        <div className='block17'>
           <p className='name'>MagToei</p>
           <div className='circle'>
             <img src="assets/mag.png" />
@@ -636,7 +636,7 @@ class Main extends React.Component{
           <h2 className='section' id='games'>Games</h2>
         </div>
 
-        <div className='block12'>
+        <div className='block16'>
           <p className='name'>cyberBlobOfTheRings</p>
           <div className='triangle'>
             <img src="assets/cyberblob.png" />
@@ -649,7 +649,7 @@ class Main extends React.Component{
 
         </div>
 
-        <div className='block11'>
+        <div className='block15'>
           <p className='name'>Freeside</p>
           <div className='circle'>
             <img src="assets/freeside.png" />
@@ -662,7 +662,7 @@ class Main extends React.Component{
 
         </div>
 
-        <div className='block10'>
+        <div className='block14'>
           <p className='name'>pastelDOA</p>
           <div className='triangle'>
             <img src="assets/pastel.png" />
@@ -675,7 +675,7 @@ class Main extends React.Component{
 
         </div>
 
-        <div className='block9'>
+        <div className='block13'>
           <p className='name'>aleatoricBounce</p>
           <div className='circle'>
             <img src="assets/bounce.png" />
@@ -687,9 +687,21 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block8'>
-          <p className='name'>Increnfinity</p>
+        <div className='block12'>
+          <p className='name'>yaBounce</p>
           <div className='triangle'>
+            <img src="assets/yab.png" />
+            <p className="desc"> yaBounce (Yet Another Bounce), a version of aleatoricBounce with the canvas displayed on a cloth simulation using Three.js and Cannon.js. </p>
+            <div className='links'>
+              <a href="https://github.com/tomjhinton/yaBounce" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
+              <a href="https://tomjhinton.github.io/yaBounce/" target="_blank"><FontAwesomeIcon icon="link"/></a>
+              </div>
+          </div>
+        </div>
+
+        <div className='block11'>
+          <p className='name'>Increnfinity</p>
+          <div className='circle'>
             <img src="assets/Increnfinity.png" />
             <p className="desc">A plotless infinite incremental game. The player picks the names of the resources to collect and the thing that produces them and then those resources increase by rates influenced by desicions made by the player. Inspired by Kittens Game and Universal Paperclips, styling has been kept to a bare minimum. Depending on your tastes these games are either highly addictive or unfathomably boring. </p>
             <div className='links'>
@@ -699,9 +711,9 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block7'>
+        <div className='block10'>
           <p className='name'>Tetris</p>
-          <div className='circle'>
+          <div className='triangle'>
             <img src="assets/Tetris.png" />
             <p className="desc"> A solo project built over a one week timeframe, the brief for this project was to build a game from a set-list utilising HTML, CSS and JavaScript.</p>
 
@@ -717,11 +729,11 @@ class Main extends React.Component{
           <h2 className='section' id='fullS'>Full Stack Sites</h2>
         </div>
 
-        <div className='block6'>
+        <div className='block9'>
           <p className='name'>Neurot467</p>
-          <div className='triangle'>
+          <div className='circle'>
             <img src="assets/neurot.png" />
-            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the resuslts are saved to a SQL server in base64.  New images are created hourly and the site resets twice a day.
+            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the results are saved to a SQL server in base64.  New images are created hourly and the site resets twice a day.
                 </p>
                 <div className='links'>
                 <a href="https://github.com/tomjhinton/fold" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
@@ -731,11 +743,11 @@ class Main extends React.Component{
           </div>
         </div>
 
-        <div className='block2'>
+        <div className='block8'>
           <p className='name'>Neurot468</p>
-          <div className='circle'>
+          <div className='triangle'>
             <img src="assets/neurot468.png" />
-            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the resuslts are saved to a SQL server in base64.  New images are created hourly and displayed on simulated cloth using Three.js and Cannon.js.
+            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the results are saved to a SQL server in base64.  New images are created hourly and displayed on simulated cloth using Three.js and Cannon.js.
                 </p>
                 <div className='links'>
                 <a href="https://github.com/tomjhinton/neurot468" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
@@ -745,9 +757,37 @@ class Main extends React.Component{
           </div>
         </div>
 
+        <div className='block7'>
+          <p className='name'>Neurot469</p>
+          <div className='circle'>
+            <img src="assets/neurot469.png" />
+            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the results are saved to a SQL server in base64.  New images are created hourly, glitch effect added using the Three.js post-processing effect passes.
+                </p>
+                <div className='links'>
+                <a href="https://github.com/tomjhinton/neurot469" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
+
+                <a href="https://neurot469.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
+          </div>
+        </div>
+
+        <div className='block6'>
+          <p className='name'>Neurot470</p>
+          <div className='triangle'>
+            <img src="assets/neurot470.png" />
+            <p className="desc">Generative art piece with python backend and a React front-end. Image creation is  done server-side using Pillow and the results are saved to a SQL server in base64.  New images are created hourly and displayed on a Three.js shape being morphed with Perlin noise, image is distorted as the mouse moves over it with a post-processing effects pass.
+                </p>
+                <div className='links'>
+                <a href="https://github.com/tomjhinton/neurot470" target="_blank"><IconGithub className="github"  width={'1.2em'} height={'1.2em'} /> </a>
+
+                <a href="https://neurot470.herokuapp.com" target="_blank"><FontAwesomeIcon icon="link"/></a>
+                </div>
+          </div>
+        </div>
+
         <div className='block5'>
           <p className='name'>EventUp</p>
-          <div className='triangle'>
+          <div className='circle'>
             <img src="assets/EventUp.png" />
             <p className="desc">EventUp was a site that allowed promoters to upload details about their upcoming events. It also used Songkick’s API to provide information about events that had not been added by our users about the venues that the events would be held at. With this information we were able to use Mapcircle to provide a map showing the location of the event on its page. I worked mainly on the form to allow people to add events to our database and on integrating the map.
                 </p>
@@ -761,7 +801,7 @@ class Main extends React.Component{
 
         <div className='block4'>
           <p className='name'>Epiphyte</p>
-          <div className='circle'>
+          <div className='triangle'>
             <img src="assets/epiphyte.png" />
             <p className="desc">A cryptocurrency investment simulator. Each user is give $100 to invest which they can spend across 20 digital assets. Front-end created with React and the back-end uses  a Python SQL database.
                 </p>
@@ -777,7 +817,7 @@ class Main extends React.Component{
 
         <div className='block3'>
           <p className='name'>Twitter Bots</p>
-          <div className='triangle'>
+          <div className='circle'>
             <img src="assets/twit.png" />
             <a href="https://twitter.com/bktbot1" target="_blank"><FontAwesomeIcon icon={['fab', 'twitter']} />  btkbot </a> Tweets generated by a neural net trained  on Boomkat write-ups.
             <br/>
@@ -793,7 +833,7 @@ class Main extends React.Component{
 
         <div className='block2'>
           <p className='name'>movieBase</p>
-          <div className='circle'>
+          <div className='triangle'>
             <img src="assets/movieBase.png" />
             <p className="desc"> .movieBase() was a site that allowed users to search for films and receive information about the film, an embedded video of its trailer and recommendations of similar films that they might also like. We used OMDB’s API to get initial information about a film that a user searched for and then fed that information into themoviedb’s API to find the URL of the film’s trailer and a selection of similar films. A user could then click on any of the similar films to receive the same information for that title. Within the project we pair coded on a single laptop so all aspects of the project were handled as part of a team.</p>
             <div className='links'>
@@ -806,7 +846,7 @@ class Main extends React.Component{
 
         <div className='block1'>
           <p className='name'>Interactive Canvas Headers</p>
-          <div className='triangle'>
+          <div className='circle'>
             <img src="assets/canvas.png" />
             <p className="desc"> Experiments with canvas animations that are interactive when hovered over.</p>
 
